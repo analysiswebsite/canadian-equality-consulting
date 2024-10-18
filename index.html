@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canadian Equality Consulting - Empowering businesses through gender equality, diversity, and inclusion strategies.">
+    <meta name="keywords" content="gender equality, diversity, inclusion, consulting, Canadian Equality Consulting, equality strategies">
+    <title>Canadian Equality Consulting | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #004d4d;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        nav .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav .dropdown:hover a {
+            background-color: #3e8e8e;
+        }
+
+        /* Hero Section with Video Background */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px 20px;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .blog-post {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .footer {
+            background-color: #004d4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .blog-post {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .blog-post {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 15px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .content {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <a href="#">Blogs</a>
+                <div class="dropdown-content">
+                    <a href="#">Diversity in the Workplace</a>
+                    <a href="#">Gender Equality</a>
+                    <a href="#">Inclusion Strategies</a>
+                </div>
+            </div>
+            <a href="#">Visit Website</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="https://canadianequality.ca/wp-content/uploads/2021/08/diverse-team-business-people.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Canadian Equality Consulting</h1>
+            <p>Empowering organizations through equality, diversity, and inclusion strategies.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Welcome to Canadian Equality Consulting</h2>
+        <p>We specialize in creating inclusive and equitable environments for businesses and organizations in Canada. Our mission is to drive positive change through effective diversity and inclusion strategies, ensuring that every individual has equal opportunities to succeed.</p>
+
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h2>Diversity in the Workplace</h2>
+                <p>Learn about the importance of diversity and how it can benefit your business. Embracing diverse perspectives can lead to more innovative solutions and a healthier workplace environment.</p>
+                <a href="https://canadianequality.ca/what-are-the-employers-responsibilities-concerning-diversity-in-the-workplace/">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h2>Gender Equality: Why it Matters</h2>
+                <p>Explore how gender equality contributes to a more productive and harmonious workplace. We discuss strategies to close the gender gap and promote fairness in every aspect of your organization.</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h2>Inclusion Strategies for Success</h2>
+                <p>Inclusion is key to building a thriving business. Find out how inclusive policies and practices can enhance your team’s engagement, performance, and overall success.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Canadian Equality Consulting. All rights reserved.</p>
+    </footer>
+</body>
+</html>
